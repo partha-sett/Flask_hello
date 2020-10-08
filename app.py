@@ -6,7 +6,8 @@ app = Flask(__name__)
 
 CORS(app)
 
-@app.route('/')
+@app.route('/', methods=['GET'])
+@cross_origin()
 
 
 def hello():
